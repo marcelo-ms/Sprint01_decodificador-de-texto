@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge One</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://alura.com.br/" target="_blank" ><img src="assets/alura-logo.svg" alt="logo alura"></a>                      
+            <a href="https://github.com/marcelo-ms" target="_blank"><img class="ladoDireito" src="assets/github.png" alt="logoGitHub"></a>
+             <a href="https://www.oracle.com/br/education/oracle-next-education/" target="_blank"><img src="assets/one.avif" alt="logoOne"></a>     
+            
+        </div>
+    </header>
+    <main>
+        
+        <div class="main__tela">
+            <!-- Lado esquerdo da tela -->
+            <div class="entrada">
+                <div class="texto">
+                    <textarea name="iTexto" id="iTexto" cols="30" rows="10" placeholder="Digite o texto aqui"></textarea>
+                </div>
+                <div class="alerta">
+                    <img src="assets/alerta.png" alt="alerta" >
+                    <p>Somente letras minúsculas e sem acento</p>
+                </div>
+                <div class="entrada__btn">
+                    <button type="button" id="btnEncriptar" onclick="encriptarTexto()" href="#oTexto">Encriptar</button>
+                    <button type="button" id="btnDesencriptar" onclick="desencriptarTexto()" href="#oTexto">Desencriptar</button>
+                </div>
+            </div>
+            <!-- Lado direito da tela -->
+            <div class="saida">
+                <div id="MostrarImagem" class="mostrar-imagem">
+                    <img src="assets/menino.png" alt="menino com lupa">
+                    <h2>Nenhuma mensagem foi encontrada</h2>
+                    <p>Escreva o texto que deseja <br> encriptar ou desencriptar</p>
+                </div>
+                <div id="MostrarTexto" class="mostrar-texto">
+                    <textarea name="oTexto" id="oTexto" cols="30" rows="10" readonly></textarea>
+                    <div class="mostrar-texto__btn">
+                        <button type="button" id="btnCopiar" onclick="copiarTexto()">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="footer-texto">
+        
+       <p>Criado por marcelo-ms</p>
+
+    </ul>
+</footer>
+</html>

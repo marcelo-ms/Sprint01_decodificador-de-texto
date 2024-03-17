@@ -1,0 +1,336 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    padding: 1em 0;
+    background-color: #23cfd5;
+    justify-content: center;
+    display:flax;
+     text-align: center; 
+     transition: 0.5s;
+}
+.logo:hover{
+    transform: translateY(-10px);
+}
+
+.ladoDireito {
+    float: right;
+    margin-right: 2em;
+}
+
+.main__tela {
+   /* width: 100%;
+    height: calc(100vh - 84px);*/
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    gap: 82px ;
+}
+@keyframes color {
+    0%{
+        background-position: 0 50% ;
+    }
+    50%{
+        background-position: 100% 50% ;
+    }
+    100%{
+        background-position: 0 50% ;
+    }
+}
+
+.entrada, .saida {
+    float: left;
+    height: 100%;
+}
+
+.entrada {
+    width: 70%;   
+    display: flex;
+    flex-direction: column;
+}
+
+.texto {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto textarea {
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+    width: 70%;
+    height: 100%;
+    font-size: 2em;
+    line-height: 1.5;
+    padding: 1em;
+    color: #052051;
+}
+
+.texto textarea::placeholder {
+    color: #072b61;
+}
+
+.alerta {
+    height: 5%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.alerta img {
+    margin: 0 1em;
+}
+
+.entrada__btn {
+     height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+    gap: 5em;
+}
+
+.entrada__btn button:first-child, .entrada__btn button:last-child {
+    width: 40%;
+    height: 67px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.entrada__btn button:first-child {
+    background-color: #052051;
+    color: white;
+    border: 2px solid #052051;
+}
+
+.entrada__btn button:first-child:hover {
+    opacity: 0.8;
+}
+
+.entrada__btn button:last-child {
+    background-color: white;
+    color: #052051;
+    border: 2px solid #052051;
+}
+
+.entrada__btn button:last-child:hover {
+    background-color: #aab2d5;
+    color: #052051;
+}
+
+.saida {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+   
+}
+
+.mostrar-imagem, .mostrar-texto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 95%;
+}
+
+.mostrar-imagem {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    background-color: #ffffff90;
+}
+
+.mostrar-imagem img {
+    width: 80%;
+    margin: 0;
+}
+
+.mostrar-imagem h2, .mostrar-imagem p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+}
+
+.mostrar-imagem p {
+    padding: 0 1em;
+    color: #495057;
+}
+
+.mostrar-texto {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    background-color: #ffffff90;
+    align-items: center;
+    justify-content: center;
+}
+
+.mostrar-texto textarea {
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    line-height: 1.5;
+    padding: 1em;
+}
+
+.mostrar-texto__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+    width: 100%;
+}
+
+.mostrar-texto__btn button:first-child {
+    width: 40%;
+    height: 50px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: white;
+    color: #052051;
+    border: 2px solid #052051;
+}
+
+.mostrar-texto__btn button:first-child:hover {
+    background-color: #aab2d5;
+    color: #052051;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
+
+footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #f6fa0a;
+    height: 50px;
+    padding: 20px 50px;
+    flex-direction: column; 
+}
+.footer-texto{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    font-size: 24px;
+     font-weight: bold;
+    color: #d45353;
+}
+
+
+/*=============================================
+                    TABLET
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+    body {
+        background: linear-gradient(#a9d3a1 45%, #a1bbd3);
+    }
+
+
+    .entrada {
+        float: left;
+        width: 100%;
+    }
+
+    /**/
+    .salida {
+        float: left;
+        width: 100%;
+    }
+
+    .mostrar-texto, .mostrar-imagem {
+        height: 40vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+           }
+
+    .mostrar-imagem img {
+        display: none;
+    }
+
+}
+
+/*=============================================
+                    CELULAR         
+=============================================*/
+
+@media (max-width:767px){
+
+        body {
+            background: linear-gradient(#a9d3a1 45%, #a1bbd3);
+        }
+
+        .entrada {
+            float: left;
+            width: 100%;
+        }
+
+        .entrada__btn {
+            display: flex;
+            flex-direction: column;
+            padding: 2em;
+            gap: 2em;
+        }
+
+        .entrada__btn button:first-child, .entrada__btn button:last-child {
+            width: 80%;
+            height: 67px;
+        }
+
+        .saida {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .mostrar-imagem img {
+            
+            display: none;
+        }
+
+        .mostrar-texto, .mostrar-imagem {
+            height: 50vh;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+}
