@@ -15,10 +15,20 @@
 .logo:hover{
     transform: translateY(-10px);
 }
+.ladoEsquerdo{
+    float: left;
+    margin-left: 2em ;
+}
 
 .ladoDireito {
     float: right;
     margin-right: 2em;
+}
+.central{
+    float: none;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .main__tela {
@@ -252,85 +262,3 @@ footer{
     color: #d45353;
 }
 
-
-/*=============================================
-                    TABLET
-=============================================*/
-
-@media (max-width:991px) and (min-width:768px){
-
-    body {
-        background: linear-gradient(#a9d3a1 45%, #a1bbd3);
-    }
-
-
-    .entrada {
-        float: left;
-        width: 100%;
-    }
-
-    /**/
-    .salida {
-        float: left;
-        width: 100%;
-    }
-
-    .mostrar-texto, .mostrar-imagem {
-        height: 40vh;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-           }
-
-    .mostrar-imagem img {
-        display: none;
-    }
-
-}
-
-/*=============================================
-                    CELULAR         
-=============================================*/
-
-@media (max-width:767px){
-
-        body {
-            background: linear-gradient(#a9d3a1 45%, #a1bbd3);
-        }
-
-        .entrada {
-            float: left;
-            width: 100%;
-        }
-
-        .entrada__btn {
-            display: flex;
-            flex-direction: column;
-            padding: 2em;
-            gap: 2em;
-        }
-
-        .entrada__btn button:first-child, .entrada__btn button:last-child {
-            width: 80%;
-            height: 67px;
-        }
-
-        .saida {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
-
-        .mostrar-imagem img {
-            
-            display: none;
-        }
-
-        .mostrar-texto, .mostrar-imagem {
-            height: 50vh;
-            top: 0%;
-            left: 50%;
-            transform: translate(-50%, 0%);
-        }
-}
